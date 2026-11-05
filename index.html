@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ching-Yuan (Bill) Peng — MBA Candidate, Columbia Business School</title>
+<meta name="description" content="Finance professional with 6 years in corporate credit analysis, relationship banking, and family-business financing. MBA Candidate at Columbia Business School, class of 2027.">
+<style>
+  :root{
+    --navy:#012169; --blue:#75AADB; --light:#B9D9EB; --pale:#EAF3FA; --ink:#14233f; --muted:#51607a; --line:#d5e3f0; --white:#fff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:72px}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--navy);line-height:1.2;margin:0}
+  a{color:var(--navy)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+  /* Navigation */
+  nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:3px solid var(--light)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+  .brand{font-family:Georgia,serif;font-weight:700;color:var(--navy);text-decoration:none;font-size:1.1rem}
+  nav ul{list-style:none;display:flex;gap:4px;margin:0;padding:0;flex-wrap:wrap}
+  nav ul a{display:block;padding:8px 12px;border-radius:6px;text-decoration:none;font-size:.92rem;font-weight:600;color:var(--navy)}
+  nav ul a:hover{background:var(--pale)}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--light) 0%,var(--pale) 60%,#fff 100%);padding:72px 0 64px}
+  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:700;color:var(--navy);margin-bottom:14px}
+  .hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem)}
+  .hero .tag{font-size:1.2rem;color:var(--muted);margin:14px 0 26px;max-width:640px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:700;text-decoration:none;font-size:.95rem;border:2px solid var(--navy)}
+  .btn.primary{background:var(--navy);color:#fff}
+  .btn.primary:hover{background:#00164a}
+  .btn.ghost{color:var(--navy);background:transparent}
+  .btn.ghost:hover{background:var(--navy);color:#fff}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:44px}
+  .stat{background:#fff;border-left:5px solid var(--blue);border-radius:6px;padding:16px 18px;box-shadow:0 2px 10px rgba(1,33,105,.08)}
+  .stat b{display:block;font-family:Georgia,serif;font-size:1.9rem;color:var(--navy)}
+  .stat span{font-size:.85rem;color:var(--muted)}
+
+  /* Sections */
+  section{padding:68px 0}
+  section.alt{background:var(--pale)}
+  .sec-head{margin-bottom:30px}
+  .sec-head h2{font-size:2rem;display:inline-block;padding-bottom:8px;border-bottom:4px solid var(--blue)}
+  .lead{font-size:1.15rem;max-width:820px}
+
+  .grid{display:grid;gap:18px}
+  .grid.two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .grid.three{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:8px;padding:24px;box-shadow:0 2px 10px rgba(1,33,105,.05)}
+  .card h3{font-size:1.25rem;margin-bottom:4px}
+  .meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.9rem;margin-bottom:10px}
+  .card p{margin:8px 0 0}
+  .card ul{margin:10px 0 0;padding-left:20px}
+  .card li{margin-bottom:6px}
+  .course{font-size:.95rem;color:var(--muted)}
+
+  /* Experience tiles */
+  .job{margin-bottom:22px}
+  .job .role{font-weight:700;color:var(--navy);margin-top:6px}
+  .job .org-desc{font-style:italic;color:var(--muted);font-size:.95rem}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0 6px}
+  .kpi{background:var(--pale);border-radius:6px;padding:12px 14px}
+  .kpi b{display:block;font-family:Georgia,serif;font-size:1.4rem;color:var(--navy)}
+  .kpi span{font-size:.8rem;color:var(--muted)}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chip{background:var(--pale);color:var(--navy);border:1px solid var(--light);padding:6px 12px;border-radius:999px;font-size:.88rem;font-weight:600}
+
+  footer{background:var(--navy);color:#fff;padding:48px 0;text-align:center}
+  footer h2{color:#fff;font-size:1.7rem;margin-bottom:12px}
+  footer p{color:var(--light);margin:6px 0 20px}
+  footer .btn{border-color:var(--light);color:#fff}
+  footer .btn.primary{background:var(--light);color:var(--navy)}
+  footer .btn.primary:hover{background:#fff}
+  footer .btn.ghost:hover{background:var(--light);color:var(--navy)}
+  .small{font-size:.8rem;color:var(--blue);margin-top:26px}
+
+  @media (max-width:640px){
+    nav ul a{padding:6px 8px;font-size:.82rem}
+    .hero{padding:48px 0 44px} section{padding:48px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Primary">
+  <div class="wrap">
+    <a class="brand" href="#top">C. Peng</a>
+    <ul>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#additional">Additional</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">MBA Candidate · Columbia Business School · Class of 2027</div>
+    <h1>Ching-Yuan (Bill) Peng</h1>
+    <p class="tag">Finance professional in corporate credit, relationship banking, and family-business financing.</p>
+    <div class="btns">
+      <a class="btn primary" href="#experience">View Experience</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/ching-yuan-peng-6b9707182" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>6 yrs</b><span>Credit, banking &amp; corporate finance</span></div>
+      <div class="stat"><b>NTD 3B+</b><span>Enterprise portfolio managed</span></div>
+      <div class="stat"><b>25+</b><span>Corporate clients covered</span></div>
+      <div class="stat"><b>80+</b><span>Annual credit reports completed</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="summary">
+  <div class="wrap">
+    <div class="sec-head"><h2>Summary</h2></div>
+    <p class="lead">Finance professional with 6 years in corporate credit analysis, relationship banking, and family-business financing. Skilled in evaluating capital structure, financing risk, and corporate banking. MBA candidate at Columbia Business School with coursework in Finance and Real Estate. Seeking to bring analysis and client-management experience to work.</p>
+  </div>
+</section>
+
+<section id="education" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>Education</h2></div>
+    <div class="grid two">
+      <article class="card">
+        <h3>Columbia Business School</h3>
+        <div class="meta"><span>Manhattan, New York</span><span>2026 – 2027</span></div>
+        <strong>MBA Candidate, Expected May 2027</strong>
+        <p class="course"><b>Relevant coursework:</b> Corporate Finance and Management, Financial Valuation, Business Analytics &amp; Real Estate Financial Investment.</p>
+      </article>
+      <article class="card">
+        <h3>National Tsing Hua University</h3>
+        <div class="meta"><span>Hsinchu, Taiwan</span><span>2015 – 2019</span></div>
+        <strong>BA, Economics</strong>
+        <p class="course">Coursework included Micro &amp; Macro Economics, Investment Theory, Risk Mgmt., and Financial Markets.</p>
+        <ul>
+          <li>Selected as the Department of Economics graduate speech representative.</li>
+          <li>Headed the Economics Student Association and hosted student activities.</li>
+          <li>Member of Econ. Department badminton team: won 2017 Economic Cup – Badminton Championship.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><h2>Professional Experience</h2></div>
+
+    <article class="card job">
+      <h3>Xin Ding Construction Limited Company</h3>
+      <div class="meta"><span>Taiwan</span><span>2024 – 2025</span></div>
+      <div class="org-desc">Family business, housing and public construction Development &amp; Operations</div>
+      <div class="role">Executive Assistant to the Chairman</div>
+      <div class="kpis">
+        <div class="kpi"><b>NTD 20M+</b><span>Revenue boost from model shift</span></div>
+        <div class="kpi"><b>NTD 20M</b><span>Loans raised</span></div>
+        <div class="kpi"><b>3×</b><span>Profits, to NTD 10M</span></div>
+        <div class="kpi"><b>30%+</b><span>Gross margin boost</span></div>
+      </div>
+      <ul>
+        <li>Shifted company's business model from self-builders to outsourcing to downstream contractors, allowing us to cope with a labor market shortage and boost revenue by over NTD$20M.</li>
+        <li>Evaluated financial statements and raised NTD$20M in loans, funding 10 more construction projects, with potential 200%+ in net profit within a year.</li>
+        <li>Cultivated company's credit to secure more money from banks, increased revenue by over NTD$20M and tripled company's profits to NTD$10M, boosted gross profit margin by over 30%.</li>
+      </ul>
+    </article>
+
+    <article class="card job">
+      <h3>Taipei Fubon Commercial Bank</h3>
+      <div class="meta"><span>Taipei, Taiwan</span><span>2020 – 2024</span></div>
+      <div class="org-desc">Taiwan's leading commercial bank and Financial Institution</div>
+      <div class="role">Relationship Manager focused on domestic enterprises and high-asset clients (2021 – 2024)</div>
+      <div class="kpis">
+        <div class="kpi"><b>NTD 3B+</b><span>Portfolio, 25+ enterprises</span></div>
+        <div class="kpi"><b>104%</b><span>Budget achieved (NTD 40M+ profit)</span></div>
+        <div class="kpi"><b>NTD 10M</b><span>Interest revenue, structured project</span></div>
+        <div class="kpi"><b>80+</b><span>Annual credit reports</span></div>
+      </div>
+      <ul>
+        <li>Managed NTD$3B+ portfolio for 25+ local enterprises with annual revenues ranging from NTD$50M–$5B. Built relationships with high-net-worth individuals; contributed NTD$40M+ profits in a year, with 104% budget achieved.</li>
+        <li>Constructed finance and credit line planning in a high-pressure environment with tight deadlines, supported a credit client to expand production by 200%.</li>
+        <li>Structured a project for the Taipei Postproduction Business Building, was reported in news and brought NTD$10M in interest revenue for bank.</li>
+        <li>Supervised one fresh assistant's training, leading to pass oral examination and receive a promotion.</li>
+        <li>Organized financial knowledge learning sessions for clients and sought business development opportunities, leading to a 200% revenue increase over previous year.</li>
+        <li>Supported Relationship Manager to achieve profit targets and promote bank products. Built and maintained effective relationships with customers to understand needs in order to provide a high quality of service.</li>
+        <li>Analyzed and visualized the M&amp;A and international syndication project of a listed company, deepened relationship between listed company and Fubon to win more business opportunities.</li>
+        <li>Completed 80+ annual credit reports, enhancing efficiency by 200% and helping the bank earn NTD$30M.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="additional" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>Additional Information</h2></div>
+    <div class="grid three">
+      <article class="card">
+        <h3>Skills</h3>
+        <p><b>Financial Analysis &amp; Modeling</b></p>
+        <div class="chips">
+          <span class="chip">Financial Statement Analysis</span>
+          <span class="chip">Credit &amp; Risk Analysis</span>
+          <span class="chip">Business Analytics</span>
+          <span class="chip">Financial Valuation</span>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Certifications</h3>
+        <div class="chips">
+          <span class="chip">Taiwan Senior Securities Specialist</span>
+          <span class="chip">Securities Investment Trust &amp; Consulting Professional (SITC)</span>
+          <span class="chip">Futures Specialist</span>
+          <span class="chip">Bloomberg Market Concepts</span>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Leadership</h3>
+        <ul>
+          <li><b>Columbia Business School Taiwan Business Association</b> — VP of Events (2026–2027)</li>
+          <li><b>NTHU Economics Alumni Association</b> — Alternative Supervisor (2023–2024)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's connect</h2>
+    <p>Open to conversations about finance, credit, and real estate investment.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn primary" href="https://www.linkedin.com/in/ching-yuan-peng-6b9707182" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/kyopig5566" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="small">© 2026 Ching-Yuan Peng · Columbia Business School</div>
+  </div>
+</footer>
+
+</body>
+</html>
